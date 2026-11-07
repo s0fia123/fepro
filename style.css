@@ -1,0 +1,1118 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.header {
+    background-color: #FFFFFF;
+    backdrop-filter: blur(20px);
+}
+
+.header_container {
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.header_container--title {
+    font-family: Space Grotesk;
+    font-weight: 900;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1.2px;
+    vertical-align: middle;
+    color: #2D2F2F;
+}
+
+.header_container--nav {
+    width: 100%;
+    max-width: 355px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_container--nav--link {
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.35px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #5A5C5C;
+    text-decoration: none;
+    position: relative;
+}
+
+.header_container--nav--link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #FE973C;
+    transition: 0.1s linear;
+}
+
+.header_container--nav--link:hover {
+    transform: translateY(-2px);
+    transition-duration: 300ms;
+    color: #8D4A00;
+}
+
+.header_container--nav--link:hover::after {
+    width: 100%;
+}
+
+.header_container--btn {
+    padding: 13px 32px;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    background: #8D4A00;
+    color: #FFF0E7;
+    box-shadow: 0px 4px 6px -4px #8D4A001A;
+    box-shadow: 0px 10px 15px -3px #8D4A001A;
+    transition-property: transform;
+}
+
+.header_container--btn:hover {
+    transform: scale(1.1);
+    transition-duration: 600ms;
+}
+
+.hero {
+    background: radial-gradient(61.6% 85.61% at 50% 50%, rgba(253, 211, 77, 0.15) 0%, rgba(253, 211, 77, 0) 70%);
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+.hero_container {
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_container--box {
+    max-width: 670px;
+    width: 100%;
+}
+
+.hero_container--box--background {
+    padding: 6px 16px;
+    max-width: 197px;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Semi Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #FDD34D;
+    color: #5C4900;
+}
+
+.hero_container--box--title {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 120px;
+    line-height: 117px;
+    letter-spacing: -6.4px;
+    vertical-align: middle;
+    margin-top: 24px;
+    color: #2D2F2F;
+}
+
+.hero_container--box--title span {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 120px;
+    line-height: 117px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    background: linear-gradient(90deg, #8D4A00 0%, #FE973C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero_container--box--text {
+    max-width: 500px;
+    font-family: Be Vietnam Pro;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-top: 32px;
+    color: #5A5C5C;
+}
+
+.hero_container--box--btn {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.hero_container--box--btn--btn {
+    padding: 20px 48px;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    background: #8D4A00;
+    color: #FFF0E7;
+    transition-property: transform;
+}
+
+.hero_container--box--btn--btn:hover {
+    transform: scale(1.1);
+    transition-duration: 600ms;
+}
+
+.hero_container--box--btn--two--btn {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    Padding: 21px 40px;
+    color: #2D2F2F;
+    background: #FFFFFF;
+    border: 1px solid #ACADAD33;
+    border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: 1000ms;
+    transition-property: transform;
+}
+
+.hero_container--box--btn--two--btn:hover {
+    background-color: oklab(94.688% 0.00103 0.00021);
+    transform: scale(0.9);
+    transition-duration: 900ms;
+}
+
+.hero {
+    background: radial-gradient(61.6% 85.61% at 50% 50%, rgba(253, 211, 77, 0.15) 0%, rgba(253, 211, 77, 0) 70%);
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+
+.hero_container {
+    width: 100%;
+    max-width: 1184px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero_container--box {
+    max-width: 670px;
+    width: 100%;
+}
+
+.hero_container--box--background {
+    padding: 6px 16px;
+    max-width: 197px;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Semi Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: #FDD34D;
+    color: #5C4900;
+}
+
+.hero_container--box--title {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 120px;
+    line-height: 117px;
+    letter-spacing: -6.4px;
+    vertical-align: middle;
+    margin-top: 24px;
+    color: #2D2F2F;
+}
+
+.hero_container--box--title span {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 120px;
+    line-height: 117px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    background: linear-gradient(90deg, #8D4A00 0%, #FE973C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.hero_container--box--text {
+    max-width: 500px;
+    font-family: Be Vietnam Pro;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-top: 32px;
+    color: #5A5C5C;
+}
+
+.hero_container--box--btn {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.hero_container--box--btn--btn {
+    padding: 20px 48px;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    background: #8D4A00;
+    color: #FFF0E7;
+    transition-property: transform;
+}
+
+.hero_container--box--btn--btn:hover {
+    transform: scale(1.1);
+    transition-duration: 600ms;
+}
+
+.hero_container--box--btn--two--btn {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    Padding: 21px 40px;
+    color: #2D2F2F;
+    background: #FFFFFF;
+    border: 1px solid #ACADAD33;
+    border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: 1000ms;
+    transition-property: transform;
+}
+
+.hero_container--box--btn--two--btn:hover {
+    background-color: oklab(94.688% 0.00103 0.00021);
+    transform: scale(0.9);
+    transition-duration: 900ms;
+}
+
+.hero_container--img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: -70px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_container--img--man {
+    position: absolute;
+    width: 100%;
+    max-width: 465px;
+    background: #FFFFFF01;
+    box-shadow: 0px 40px 80px -20px #8D4A000F;
+}
+
+.hero_container--img--sneakers {
+    width: 100%;
+    max-width: 256px;
+    z-index: 2;
+    margin-bottom: -90px;
+    margin-left: -30px;
+    margin-top: auto;
+    background: #FFFFFF01;
+    box-shadow: 0px 40px 80px -20px #8D4A000F;
+}
+
+.trend {
+    max-width: 1184px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trend_container {
+    max-width: 552px;
+    width: 100%;
+    align-items: center;
+}
+
+.trend_container--title {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3px;
+    vertical-align: middle;
+}
+
+.trend_container--box {
+    max-width: 552px;
+    width: 100%;
+    bottom: 4.5px;
+}
+
+.trend_container--box--text {
+    margin-top: 39px;
+    font-family: Be Vietnam Pro;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 20px;
+    line-height: 32.5px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #5A5C5C;
+}
+
+.trend_container--box--text span {
+    color: #222;
+    font-weight: 700;
+    background-image: linear-gradient(#FDD34D,
+            #FDD34D);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 8px;
+    animation: underline 1.5s ease forwards;
+}
+
+@keyframes underline {
+    from {
+        background-size: 0% 8px;
+    }
+
+    to {
+        background-size: 100% 8px;
+    }
+}
+
+
+.trend_container--blockquote {
+    margin-top: 39px;
+    border-left: 4px solid #FE973C;
+    padding-left: 20px;
+}
+
+.trend_container--blockquote--text {
+    font-family: Space Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #2D2F2F;
+}
+
+.trend_container--list {
+    list-style: none;
+    padding: 0;
+}
+
+.trend_container--list--text {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 39px;
+
+    font-size: 14px;
+    letter-spacing: 1.4px;
+
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slideIn 0.8s ease forwards;
+}
+
+.trend_container--list--text::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    background: #FDD34D;
+    flex-shrink: 0;
+}
+
+.trend_container--list--text:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.trend_container--list--text:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.trend_container--list--text:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.trend_container--img {
+    border-radius: 48px;
+}
+
+.gallery {
+    background: #FFFFFF;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.gallery_container {
+    max-width: 1184px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.gallery_container--box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.gallery_container--box--contant {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery_container--box--contant--title {
+    font-family: Space Grotesk;
+    font-weight: 900;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3px;
+    vertical-align: middle;
+    color: #2D2F2F;
+}
+
+.gallery_container--box--contant--text {
+    font-family: Be Vietnam Pro;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #5A5C5C;
+    margin-top: 16px;
+    width: 399px;
+}
+
+.gallery_container--box--contant--line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #8D4A00;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.gallery_container--box--contant--line--img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.gallery_container--images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-top: 64px;
+}
+
+.gallery_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+}
+
+.gallery_pants {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery_sneakers {
+    grid-column: 1 / 3;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery_hoodie {
+    grid-column: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.gallery_tech {
+    grid-column: 2;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.evolution {
+    background: #F6F6F6;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.evolution_container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.evolution_container--box {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.evolution_container--box--title {
+    font-family: Space Grotesk;
+    font-weight: 900;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3px;
+    text-align: center;
+    vertical-align: middle;
+    color: #2D2F2F;
+}
+
+.evolution_container--box--text {
+    font-family: Be Vietnam Pro;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+    color: #5A5C5C;
+    margin-top: 16px;
+}
+
+.evolution_container--table {
+    max-width: 1024px;
+    width: 100%;
+    margin: 80px auto 0;
+    box-shadow: 0px 40px 80px -20px #8D4A000F;
+    background: #FFFFFF;
+    border-radius: 48px;
+    overflow: hidden;
+}
+
+.evolution_container--table--box {
+    max-width: 1024px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.evolution_container--table--box--row {
+    background: #F0F1F1
+}
+
+.evolution_container--table--box--row--one {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2.4px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #2D2F2F;
+    padding: 24px 32px;
+}
+
+.evolution_container--table--box--row--two {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #2D2F2F;
+    padding: 24px 32px;
+}
+
+.evolution_container--table--box--row--three {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #2D2F2F;
+    padding: 24px 32px;
+}
+
+.evolution_container--table--box--row--four {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    text-align: left;
+    color: #2D2F2F;
+    padding: 24px 32px;
+}
+
+.evolution_container--table--box--body {
+    max-width: 1024px;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.evolution_container--table--box--body--row {
+    border-top: 1px solid #E7E8E8;
+}
+
+.evolution_container--table--box--body--row--text {
+    font-family: Be Vietnam Pro;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D2F2F;
+    text-align: left;
+    padding: 40px 32px;
+}
+
+.evolution_container--table--box--body--row--text--background {
+    padding: 24px 32px;
+    font-family: Be Vietnam Pro;
+    font-weight: 700;
+    font-style: Semi Bold;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.evolution_container--table--box--body--row--text--background--archived {
+    padding-top: 2.5px;
+    padding-right: 16px;
+    padding-bottom: 2.5px;
+    padding-left: 16px;
+    border-radius: 50px;
+    background: #E1E3E3;
+}
+
+.evolution_container--table--box--body--trending {
+    background: #FDD34D1A;
+    border-top: 1px solid #E7E8E8
+}
+
+.evolution_container--table--box--body--row--text--background--trending {
+    background: #FE973C;
+    padding-top: 2.5px;
+    padding-right: 16px;
+    padding-bottom: 2.5px;
+    padding-left: 16px;
+    border-radius: 48px;
+}
+
+.evolution_container--table--box--body--row--text--background--vaulted {
+    background: #E1E3E3;
+    padding-top: 2.5px;
+    padding-right: 16px;
+    padding-bottom: 2.5px;
+    padding-left: 16px;
+    border-radius: 9999px;
+}
+
+.evolution_container--table--box--body--row--text--background--emerging {
+    background: #FECF36;
+    padding-top: 2.5px;
+    padding-right: 16px;
+    padding-bottom: 2.5px;
+    padding-left: 16px;
+    border-radius: 48px;
+}
+
+.form {
+    background: #FFFFFF;
+    padding-top: 128px;
+    padding-right: 64px;
+    padding-bottom: 128px;
+    padding-left: 64px;
+}
+
+.form_background {
+    max-width: 1152px;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 48px;
+    padding: 8px;
+    background: linear-gradient(135deg, #8D4A00 0%, #7C4000 100%);
+}
+
+.form_background--box {
+    max-width: 1136px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 48px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+
+.form_background--box--info {
+    max-width: 456px;
+    width: 100%;
+    margin: 110px 80px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
+.form_background--box--info--title {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -3px;
+    vertical-align: middle;
+    color: #2D2F2F;
+}
+
+.form_background--box--info--text {
+    margin-top: 24px;
+    font-family: Be Vietnam Pro;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 29.25px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+}
+
+.form_background--box--info--members {
+    display: flex;
+}
+
+.form_background--box--info--members--images {
+    border: 2px solid #FE973C;
+    border-radius: 50px;
+}
+
+.form_background--box--form {
+    margin: 80px 80px;
+}
+
+.form_background--box--form--label--one {
+    display: flex;
+    flex-direction: column;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #5A5C5C;
+}
+
+.form_background--box--form--label--text--one {
+    margin-left: 10px;
+}
+
+.form_background--box--form--label--input--one {
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50px;
+    background: #F0F1F1;
+    padding: 20px 32px;
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    color: #2D2F2F;
+    outline: none;
+    transition: border 0.3s ease
+}
+
+.form_background--box--form--label--input--one:focus {
+    border: 2px solid #9a9a9a;
+}
+
+.form_background--box--form--label--two {
+    display: flex;
+    flex-direction: column;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #5A5C5C;
+    margin-top: 35px;
+}
+
+.form_background--box--form--label--text--two {
+    margin-left: 10px;
+}
+
+.form_background--box--form--label--input--two {
+    width: 100%;
+    height: 64px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50px;
+    background: #F0F1F1;
+    padding: 20px 32px;
+    font-family: Be Vietnam Pro;
+    font-size: 14px;
+    color: #2D2F2F;
+    outline: none;
+    transition: border 0.3s ease
+}
+
+.form_background--box--form--label--input--two:focus {
+    border: 2px solid #9a9a9a;
+}
+
+.form_background--box--form--button {
+    display: flex;
+    width: 456px;
+    border: none;
+    border-radius: 50px;
+    background: #2D2F2F;
+    color: #FFFFFF;
+    padding: 20px 20px;
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    transition-property: transform;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_background--box--form--button img {
+    width: 22px;
+    margin-left: 6px;
+}
+
+.form_background--box--form--button:hover {
+    transform: scale(1.05);
+    transition-duration: 500ms;
+    box-shadow: 0px 4px 6px -4px #8D4A001A;
+    box-shadow: 0px 10px 15px -3px #8D4A001A;
+}
+
+.form_background--box--form--text {
+    width: 430px;
+    padding-left: 24px;
+    font-family: Be Vietnam Pro;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 11px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #A5AAAA;
+    margin: -12px 0 0;
+    margin-top: 20px;
+    background: #ffffff;
+}
+
+.form_background--box--info--members {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-top: 24px;
+}
+
+.form_background--box--info--members--images {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.form_background--box--info--members--images img {
+    width: 48px;
+    object-fit: cover;
+    border: 2px solid #FE973C;
+    border-radius: 50%;
+    padding: 3px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.form_background--box--info--members span {
+    font-family: Be Vietnam Pro;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #5A5C5C;
+    white-space: nowrap;
+}
+
+.footer {
+    background: #F6F6F6;
+}
+
+.footer_box {
+    max-width: 1184px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 64px;
+}
+
+.footer_box--title {
+    font-family: Space Grotesk;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+    vertical-align: middle;
+    color: #2D2F2F;
+}
+
+.footer_box--line {
+    gap: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_box--line--text {
+    font-family: Be Vietnam Pro;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+    vertical-align: middle;
+    color: #5A5C5C;
+}
+
+.footer_box--line--text::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+    width: 0;
+    height: 1px;
+    background: #FE973C;
+    transition: 0.1s linear;
+}
+
+.footer_box--line--text:hover {
+    transform: translateY(-1px);
+    transition-duration: 300ms;
+    color: #8D4A00;
+}
+
+.footer_box--line--text:hover::after {
+    width: 100%;
+}
+
+.footer_box--container--text {
+    font-family: Be Vietnam Pro;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #5A5C5C;
+}
